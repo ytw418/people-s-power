@@ -1,0 +1,43 @@
+*, *::before, *::after {  box-sizing: border-box;}
+.m-content {  padding: 0px;  max-width: 100%;  margin: 0 auto;}
+.m-timeline {  position: relative;  list-style: none;  padding: 0;  margin: 0;    color: #333;}
+.m-timeline > li {  position: relative;  padding: 0px 0 20px 30px;  transition: all 100ms;}
+.m-timeline > li::before, .m-timeline li::after {  transition: all 100ms;}
+.m-timeline > li::before {  display: block;  content: '';  position: absolute;  top: 13px;  left: 0;  z-index: 2;  background-color: #fff;  
+width: 20px;  height: 20px;  border-radius: 50%;  border: 3px solid #111;}
+.m-timeline > li::after {  content: '';  display: block;  width: 2px;  background-color: #ddd;  position: absolute;
+  top: 0;  left: 0px;  height: 100%;  z-index: 1;}
+.m-timeline > li:first-child::after {  top: 15px;}
+.m-timeline > li:last-child::after {  height: 15px;}
+.m-timeline__date { font-size: 30px;  margin: 0 0 .3em 0;  color: #0072bc;}
+.m-timeline p {  margin: 0 0 .5em;}
+@media (min-width: 1024px) {
+  .m-timeline > li:nth-child(odd) {   text-align: right;    padding-left: 0;    padding-right: calc(50% + 30px);  }
+  .m-timeline > li:nth-child(even) {    padding-left: calc(50% + 30px);  }
+  .m-timeline > li::before {    left: calc(50% - 9px);  }
+  .m-timeline > li::after {    left: calc(50% - 0px);  }
+}
+
+ul.detail {list-style:none; padding:0; margin:}
+ul.detail li {font-size:13px; line-height:28px; padding:0 0 0 18px; background:url("../img/bullet_01.gif") no-repeat 5px center }
+ul.detail_L li {font-size:13px; line-height:28px; padding:0 18px 0 0; background:url("../img/bullet_01.gif") no-repeat 99.5% center }
+ul.detail li span.detailD {color:#aaa;   padding: 0 10px 0 0; }
+ul.detail_L li span.detailD {color:#aaa;  float:right; padding: 0 0 0 10px;}
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+ul.detail_L li {font-size:12px; line-height:25px; padding:0 0 0 18px; background:url("../img/bullet_01.gif") no-repeat 5px center }
+.m-timeline > li::after {   left: 9px;  }
+ul.detail li span.detailD {color:#aaa;   padding: 0 10px 0 0; }
+ul.detail_L li span.detailD {color:#aaa;  float:left; padding: 0 10 0 0px;}
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}

@@ -1,0 +1,61 @@
+<!--/*-----------------------------------------------------------------+
+|  이미지 경로 : {{$template}}/img/hblock/design/footer_02/img/  
+|  css 경로    : {{$template}}/img/hblock/design/footer_02/css/
+|  js 경로     : {{$template}}/img/hblock/design/footer_02/js/
++------------------------------------------------------------------*/-->
+
+<link rel="stylesheet" href="{{$template}}/img/hblock/design/footer_02/css/style.css">
+<footer >
+ <div class="law animatable fadeInUp">
+  <ul>
+   <li>개인정보처리방침</li>
+   <li>이메일무단수집거부</li>
+   <li>회사소개</li>
+   <li>오시는길</li>
+  </ul>
+ </div>
+ <div class="container ">
+  <div class="row">
+   <div class="info_1 animatable fadeInUp">
+    <h2>COMPANY</h2>
+    <p>미광디자인</p>
+    <p>서울시 중구 태평로 1가 우리빌딩주식회사</p> 
+    <p>대표 홍길동</p> 
+    <p>사업자번호 786-56-00061</p> 
+   </div>
+   <div class="info_2 animatable fadeInUp">
+    <div class="footer-info">
+     <h2>CUSTOMER</h2>
+     <p>정성껏 상담해 드리겠습니다.</p>
+     <p>Tel : 010-3217-3646</p>
+     <p>Fax : 010-3217-3646</p>
+     <p>Mail : phlink@nate.com</p>
+    </div>
+   </div>
+   <div class="info_3 animatable fadeInUp"> 
+    <h2>FOLLOW US</h2>
+    <ul class="social-icon">
+     <li><a href="#" class=""><img src="{{$template}}/img/hblock/design/footer_02/img/bt_facebook.png" alt="페이스북 바로가기" /></a></li>
+     <li><a href="#" class=""><img src="{{$template}}/img/hblock/design/footer_02/img//bt_twitter.png" alt="트위터 바로가기" /></a></li>
+     <li><a href="#" class=""><img src="{{$template}}/img/hblock/design/footer_02/img//bt_instagram.png" alt="인스타그램 바로가기" /></a></li>
+     <li><a href="#" class=""><img src="{{$template}}/img/hblock/design/footer_02/img//bt_blog.png" alt="블로그 바로가기" /></a></li>
+     <li><a href="#" class=""><img src="{{$template}}/img/hblock/design/footer_02/img//bt_youtube.png" alt="유튜브 바로가기" /></a></li>
+    </ul>
+    <p class="member_login">
+    {{if $use_member == 'Y'}}
+    {{if $member_id}}
+    <a href="{{$template}}/member/login.php?com_member_basic=logout">로그아웃</a> ː
+    <a href="{{$template}}/member/modify.php?tit=06&sub=02">마이페이지</a>
+    {{else}}
+    <a href="{{$template}}/member/login.php?tit=06&sub=02">로그인</a> ː 
+    <a href="{{$template}}/member/join.php?tit=06&sub=01">회원가입</a>
+    {{/if}}
+    {{/if}}
+    </p> 
+   </div>
+   <div class="copyright_text animatable fadeInUp">
+    <p>Copyright &copy; 미광디자인. All rights reserved. <a class="sign" href="http://www.toweb.kr" target="_blank" >Desig by MG</a></p>
+   </div> 
+  </div>
+ </div>
+</footer>

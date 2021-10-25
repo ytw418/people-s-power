@@ -1,0 +1,30 @@
+/*---------------------------------------
+  board_01               
+-----------------------------------------*/
+div.board_01 {width:100%; background-color:#00b5e3; color:#fff; overflow:hidden; padding:10px 0; }
+div.board_01 div.notice {width:1100px; margin:0 auto; }
+div.board_01 div.notice div {float:left; }
+div.board_01 div.tit {width:10%;  padding-top:13px; font-size:17px; color:#fff; font-weight:700; display:table-cell; vertical-align: middle; }
+div.board_01 div.cont {width:85%; padding-top:13px; }
+div.board_01 a:hover {color:#fff;}
+div.board_01 div.more {width:5%; padding-top:3px; opacity:0.8; float:right; text-align:center; }
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+div.board_01 {padding:0 20px;}
+div.board_01 div.notice {width:100%; margin:0 0 20px 0 ; position:relative; }
+div.board_01 div.notice div {float:none; font-size:14px;}
+div.board_01 div.tit {width:100%; padding:25px 0 0 0;  border-bottom:2px solid #fff; font-size:20px !important; color:#fff;  display: table-cell; vertical-align: middle; }
+div.board_01 div.cont {width:100%; padding:30px 10px 20px 10px; }
+div.board_01 div.more {position:absolute; top:15px; right:20px; }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}

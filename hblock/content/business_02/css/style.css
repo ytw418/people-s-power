@@ -1,0 +1,32 @@
+#block_02 {width:100%; }
+#block_02 h3 {font-size:20px; padding:0 0 20px 16px; position:relative; }
+#block_02 h3::before {content:""; height:20px; width:4px; background-color:#555; position:absolute; top:6px;  left:0px; }
+#block_02 p.txtP { line-height:25px; }
+#block_02 div.icoBox {overflow:hidden; margin:10px 0 60px 0;}
+#block_02 section a{display:block; font-size:13px; padding:20px 20px 22px 20px; text-align:center; border:1px solid #dfdfdf; 
+border-radius:10px; margin:1% 1%; width:23%; box-sizing:border-box; float:left; }
+#block_02 section a:hover span.detail{background-color:#333; color:#fff; box-sizing:border-box; }
+#block_02 section a span.detail {display:block; background-color:#f0f0f0; color:#888; width:150px; margin:10px auto 0 auto; padding:2px 0 4px 0; font-size:12px;}
+#block_02 div.icoBox2 {overflow:hidden; margin:10px 0; font-size:13px;}
+#block_02 div.icoBox2 section {display:block; padding:20px 20px; text-align:center; border:1px solid #dfdfdf; 
+border-radius:10px; margin:1% 1%; width:23%; box-sizing:border-box; float:left; }
+#block_02 div.icoBox2 section:hover {background-color:#f5f5f5;}
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+#block_02 section a {width:48%;}
+#block_02 div.icoBox2 section {width:48%;}
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+#block_02 section a {width:98%;}
+#block_02 div.icoBox2 section {width:98%;}	
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}
+

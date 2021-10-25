@@ -1,0 +1,40 @@
+
+#block_04 {width:100%;  overflow:hidden; padding:100px 0 90px 0; background-color:#fff;}
+#block_04 div.wd_11 {width:1120px; box-sizing:border-box; margin:0 auto; }
+#block_04 div.block_L {width:49%; background-color:#fff; padding:33px 40px; height:380px; float:left; border:1px solid #dfdfdf; box-sizing:border-box; position:relative;}
+#block_04 div.block_L h3{font-size:24px;  padding:0 0px 30px 3px; margin :0; border-bottom:1px solid #dfdfdf;}
+#block_04 div.block_L p.more{position:absolute; right:38px; top:36px;}
+#block_04 div.block_L p.list{padding-top:25px;}
+#block_04 div.block_R {width:49%; float:right; }
+#block_04 div.block_R div a{display:block; border:1px solid #dfdfdf; background-color:#fff;  box-sizing:border-box; height:180px;}
+#block_04 div.block_R div.ico1 a{float:left; font-size:18px; width:48%; padding:125px 0 0 ; text-align:center; margin-bottom:20px; background-image:url("../img/ico1.png"); background-repeat:no-repeat; background-position:center 35px;}
+#block_04 div.block_R div.ico2 a{float:right; font-size:18px; width:48%;padding:125px 0 0 ; text-align:center; margin-bottom:20px; background-image:url("../img/ico2.png"); background-repeat:no-repeat; background-position:center 35px;}
+#block_04 div.ico1 a:hover,#block_04 div.ico2 a:hover {border:1px solid #aaa; }
+#block_04 div.block_R div.ico3 {clear:both; width:100%; font-size:40px; padding:46px 0 0px 175px ; border:1px solid #dfdfdf;
+  box-sizing:border-box; height:180px;  margin-bottom:20px; background-color:#fff;
+  background-image:url("../img/ico3.png"); background-repeat: no-repeat; background-position: 80px center;}
+#block_04 div.block_R div.ico3 span {display:block; font-size:13px; padding-top:5px; }
+#block_04 .main_notice td {padding:8px 0}
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+#block_04 { box-sizing:border-box; padding:50px 20px;}
+#block_04 div.wd_11 {width:100%;}
+#block_04 div.block_L {width:100%; margin-bottom:20px;}
+#block_04 div.block_R {width:100%; }
+#block_04 div.block_R div.ico3 {clear:both; width:100%; box-sizing:border-box; font-size:30px; padding:55px 30px 0px 30% ;  
+margin-bottom:20px; background:url("../img/ico3.png") no-repeat 10% center;}
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+#block_04 div.block_R div.ico3 { background:url("../img/ico3.png") no-repeat 5% center;  font-size:25px;}
+}
+@media (max-width: 320px) {
+}
+
+

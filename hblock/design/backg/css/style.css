@@ -1,0 +1,51 @@
+#backg {  text-align: center;  color: #fff; }
+
+#backg h1,#backg p {  padding: 0 3%;  word-wrap: break-word;   /*font-family: 'Roboto Slab', serif;*/}
+#backg h1 {  font-size: 4.4em; font-weight:bold;  letter-spacing: 0.05em; line-height:75px;}
+#backg p {  font-size: 15px; margin-top:60px;  line-height: 1.4em; }
+
+/* Image */
+
+#backg {
+  background-image: url("../img/slide1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80%;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  overflow: hidden;
+}
+
+#heading_container {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+#backg h1 {  font-size: 2.8em;  line-height:55px; }	
+#backg h1,#backg  p {    margin: 3.25% 0;  }
+#backg {  height:60%;}
+#heading_container {   top: 43%;}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}

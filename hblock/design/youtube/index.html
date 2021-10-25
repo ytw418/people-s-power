@@ -1,0 +1,20 @@
+<!--/*-----------------------------------------------------------------+
+|  이미지 경로 : {{$template}}/img/hblock/design/youtube/img/  
+|  css 경로    : {{$template}}/img/hblock/design/youtube/css/
+|  js 경로     : {{$template}}/img/hblock/design/youtube/js/
++------------------------------------------------------------------*/-->
+
+<link rel="stylesheet" href="{{$template}}/img/hblock/design/youtube/css/style.css">
+<div class="youtube animatable fadeInUp">
+<a href="#" id="youtube" ><p class="text">동영상 보기</span><span class="ico"><img src="{{$template}}/img/hblock/design/youtube/img/ico_video.png" alt="" /></span></p><span class="mask"></span></a>
+<link rel='stylesheet prefetch' href='{{$template}}/img/hblock/design/youtube/css/video_popup.css'>
+<script src='{{$template}}/img/hblock/design/youtube/js/video_popup.js'></script>
+    <script >
+   $('#youtube').magnificPopup({
+   items: {
+    src: 'https://www.youtube.com/watch?v=GrzoAqVynKw' // youtube code
+   },
+   type: 'iframe'
+  });
+  </script>
+</div>

@@ -1,0 +1,27 @@
+#icon { width:100%; overflow:hidden; padding:0px 0 10px 0; font-size:17px; border-bottom:1px solid #dfdfdf; }
+#icon ul {padding:0; width:1100px; margin:0px auto;}
+#icon ul li {float:left;  width:25%; list-style-type:none; padding:25px 0;}
+#icon ul li a{display:block; height:200px; text-align: center; padding-top:135px; box-sizing:border-box; }
+#icon ul li.ico1 a:hover,#icon ul li.ico2 a:hover,#icon ul li.ico3 a:hover,#icon ul li.ico4 a:hover{
+		background-position:center 25%; transition: all 0.3s;}
+#icon ul li.ico1 a{ background:url("../img/bg_company.png")no-repeat center 35%; transition: all 0.3s;}
+#icon ul li.ico2 a{ background:url("../img/bg_business.png")no-repeat center 35%; transition: all 0.3s; }
+#icon ul li.ico3 a{ background:url("../img/bg_product.png")no-repeat center 35%;  transition: all 0.3s;}
+#icon ul li.ico4 a{ background:url("../img/bg_qna.png")no-repeat center 35%; transition: all 0.3s;}
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+#icon {  border-bottom:0px solid #dfdfdf; }
+#icon ul {width:100%; }
+#icon ul li {float:left;  width:50%; list-style-type:none; padding:5px 0;}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}
+

@@ -1,0 +1,105 @@
+<!--/*-----------------------------------------------------------------+
+|  이미지 경로 : {{$template}}/img/hblock/design/menu_02/img/  
+|  css 경로    : {{$template}}/img/hblock/design/menu_02/css/
+|  js 경로     : {{$template}}/img/hblock/design/menu_02/js/
++------------------------------------------------------------------*/-->
+
+<link rel="stylesheet" href="{{$template}}/img/hblock/design/menu_02/css/style.css">
+<link rel="stylesheet" href="{{$template}}/img/hblock/design/menu_02/css/menu.css">
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<div id="toparea">
+  <div id="topBox"> 
+ <div class="top_mask"> <!--상단메뉴-->
+   <div id="top">
+    <div id="header" class="" >
+     <div class="logo" id="logo" ><a href="{{$template}}/" ><img src="{{$template}}/img/hblock/design/menu_02/img/logo.png"  /></a></div>
+    </div> 
+   </div>
+  </div>
+ </div>
+ 
+ <aside class="util">
+  <div class="util_Area">
+   <a href="{{$template}}/" class="first" >Home</a>
+   <span id="M_member_loginmenu">
+   {{if $use_member == 'Y'}}
+   {{if $member_id}}
+   <a href="{{$template}}/member/login.php?com_member_basic=logout">Logout</a>
+   <a href="{{$template}}/member/modify.php?tit=06&sub=02">Mypage</a>
+   {{else}}
+   <a href="{{$template}}/member/login.php?tit=06&sub=02">Login</a>
+   <a href="{{$template}}/member/join.php?tit=06&sub=01">Join</a>
+   {{/if}}
+   {{/if}}
+   </span>
+
+  </div>
+ </aside><!--//util//-->
+ <div class="gnb dropdown" id="gnb"  >
+  <!--슬라이드메뉴-->
+  <ul>
+   <li class="menu"><!--대메뉴1-->
+   <div class="depth1"><a href="{{$template}}/company/company_1.php?sub=01&tit=01" class="first" >회사소개</a></div>
+   <div class="depth2">
+   <ul>
+   <li><a href="{{$template}}/company/company_1.php?tit=01&sub=01" >인사말</a></li>
+   <li><a href="{{$template}}/company/company_4.php?tit=01&sub=04" >연혁</a></li>
+   <li><a href="{{$template}}/company/company_5.php?tit=01&sub=05" >조직도</a></li>
+   <li><a href="{{$template}}/company/company_3.php?tit=01&sub=03" >찾아오시는 길</a></li>
+   </ul>
+   </div>
+   </li>
+   <li class="menu"><!--대메뉴2-->
+   <div class="depth1"><a href="{{$template}}/business/business_1.php?tit=02&sub=01" >사업소개</a></div>
+   <div class="depth2">
+   <ul>
+   <li><a href="{{$template}}/business/business_1.php?tit=02&sub=01" >사업분야</a></li>
+   <li><a href="{{$template}}/business/business_2.php?tit=02&sub=02" >사업안내</a></li>
+   </ul>
+   </div>
+   </li>
+   <li class="menu"><!--대메뉴3-->
+   <div class="depth1"><a href="{{$template}}/product/product_1.php?tit=03&sub=01&com_board_category_code=c1" >제품소개</a></div>
+   <div class="depth2">
+   <ul>
+   <li><a href='{{$template}}/product/product_1.php?tit=03&sub=01&com_board_category_code=c1'>제품소개1</a></li>
+   <li><a href='{{$template}}/product/product_1.php?tit=03&sub=01&com_board_category_code=c2'>제품소개2</a></li>
+   <li><a href='{{$template}}/product/product_1.php?tit=03&sub=01&com_board_category_code=c3'>제품소개3</a></li>
+   <li><a href='{{$template}}/product/product_1.php?tit=03&sub=01&com_board_category_code=c4'>제품소개4</a></li>
+   <li><a href='{{$template}}/product/product_1.php?tit=03&sub=01&com_board_category_code=c5'>제품소개5</a></li>
+   </ul>
+   </div>
+   </li>
+   <li class="menu"><!--대메뉴4-->
+   <div class="depth1"><a href="{{$template}}/qna/qna_1.php?tit=04&sub=01" >온라인문의</a></div>
+   <div class="depth2">
+   <ul>
+   <li><a href="{{$template}}/qna/qna_1.php?tit=04&sub=01" >Q & A</a></li>
+   <li><a href="{{$template}}/qna/qna_2.php?tit=04&sub=02" >1:1 문의</a></li>
+   </ul>
+   </div>
+   </li>
+   <li class="menu"><!--대메뉴5-->
+   <div class="depth1"><a href="{{$template}}/customer/customer_1.php?tit=05&sub=01" >고객센터</a></div>
+   <div class="depth2">
+   <ul>
+   <li><a href="{{$template}}/customer/customer_1.php?tit=05&sub=01" >공지사항</a></li>
+   <li><a href="{{$template}}/customer/customer_2.php?tit=05&sub=02" >자주하는 질문</a></li>
+   <li><a href="{{$template}}/customer/customer_3.php?tit=05&sub=03" >갤러리</a></li>
+   <li><a href="{{$template}}/customer/customer_4.php?tit=05&sub=04" >자유게시판</a></li>
+   <li><a href="{{$template}}/customer/customer_5.php?tit=05&sub=05" >대리점안내</a></li>
+   </ul>
+   </div>
+   </li>
+  </ul>
+ </div> 
+<!--mobile menu-->
+ <div class="button_container" id="toggle">
+  <span class="top"></span>
+  <span class="middle"></span>
+  <span class="bottom"></span>
+  <div class="txt">MENU</div>
+ </div>
+<script  src="{{$template}}/img/hblock/design/menu_02/js/menu.js"></script>
+</div>
+</div>

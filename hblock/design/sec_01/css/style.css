@@ -1,0 +1,24 @@
+div.sec_01 { width:1100px; margin:0 auto; padding:30px 0px 50px 0;  box-sizing:border-box; word-break:keep-all; }
+div.sec_01 h2.main { font-size:23px; font-weight:600; position:relative; text-align:left;  padding:50px 0 0 0; }
+div.sec_01 h2.main span.section_tit:after { content:""; width:50px;  height:1px; background-color:#ccc; display:block; 
+text-align:center; margin:7px 0;  }
+div.sec_01 .txt_01 {display:block; text-align:left; line-height:28px;   padding:20px 0 0 0; font-size:16px; color:#777;}
+
+
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+div.sec_01 { width:100%; margin:0 auto; padding:30px 15px 10px 15px; box-sizing:border-box; }	
+div.sec_01 h2.main { font-size:20px; font-weight:600 ;  padding:30px 0 0 0;  }
+div.sec_01 .txt_01 {font-size:15px; line-height:25px; }	
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}

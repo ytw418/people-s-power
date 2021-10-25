@@ -1,0 +1,35 @@
+
+div.intro {line-height:28px; font-size:15px; overflow: hidden; }
+div.intro div.contL {float:left; width:30%;}
+div.intro div.contR {float:right; width:65%;}
+div.intro p.txtP { padding-bottom:20px; }
+p.sign {text-align:left;}
+p.sign strong{font-size:26px; font-weight:normal; padding-left:10px;}
+
+div.ceo p{line-height:36px;}
+div.ceo .txtHead2{line-height:55px; font-weight:400;}
+
+div.vision p{}
+div.vision .txtHead3{ font-weight:500;}
+div.vision .clearB {border:1px solid #dfdfdf; padding:70px 30px 50px 30px; margin-top:50px;}
+div.vision div.contL {float:left; width:20%; text-align:center;}
+div.vision div.contR {float:right; width:78%;  text-align:left;}
+
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+div.vision .clearB {border:1px solid #dfdfdf; padding:30px 20px 20px 20px; margin-top:50px;}	
+div.vision div.contL {float:none; width:100%; text-align:left;}
+div.vision div.contR {float:none; width:100%;  text-align:left;}
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}
+

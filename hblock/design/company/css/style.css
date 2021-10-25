@@ -1,0 +1,49 @@
+div.company {   padding:80px 0 90px 0;  min-height:auto; box-sizing:border-box;  overflow:hidden;  }
+div.company div.floatL{float:left; width:220px; height:230px;  }
+div.company div.floatR{float:right; width:880px;}
+div.company div.bg1{background:url("../img/tit_ico1.png")no-repeat left bottom; }
+div.company div.floatL h3{ font-size:32px; padding-top:10px; background:url("../img/bg_ico1.png")no-repeat left top;  }
+div.company div.floatL p{padding:10px 0 0 0; font-size:13px; color:#999; line-height:20px; margin:0; }
+div.company div.floatR ul {}
+div.company div.floatR ul li a{float:left; width:33.33333%; text-align:center; transition: all 0.3s;}
+div.company div.floatR ul li a{padding-top:125px; background-position:center top; background-repeat:no-repeat;}
+div.company div.floatR ul li.m1 a{ background-image:url("../img/ico1.png");}
+div.company div.floatR ul li.m2 a{ background-image:url("../img/ico2.png");}
+div.company div.floatR ul li.m3 a{ background-image:url("../img/ico3.png");}
+div.company div.floatR ul li span.tit {display:block; font-size:20px; padding-bottom:30px;font-weight:500; }
+div.company div.floatR ul li span.txt {display:block; font-size:15px;}
+div.company div.floatR ul li a:hover{background-position:center 10px; transition: all 0.3s; }
+
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+/*layout*/
+div.company { width:100%;  padding:50px 0 ; min-height:auto;  }
+div.company div.floatL{float:none; width:100%; height:auto; padding-bottom:20px; }
+div.company div.floatR{float:none; width:100%; }
+div.company div.bg1{background:none; }
+div.company div.floatL h3{font-size:32px; text-align:center; padding-top:10px; background:url("../img/bg_ico1.png")no-repeat center top;  }
+div.company div.floatL p{padding:10px 0 0 0; font-size:13px; color:#999; line-height:20px; margin:0; text-align:center; }
+
+/*product*/
+div.company section.pro_list { width:100%; padding:20px 0 0px;}
+div.company section.pro_list td.board_output_gallery_img {text-align:center; line-height:0;  }
+div.company section.pro_list td.board_output_gallery_img img {width:100px; height:100px; vertical-align:top; }
+div.company section.pro_list span.board_output_gallery_subject a {font-size:12px !important; display:block; padding-top:10px;}
+div.company .board_output_gallery_img a {height:auto; width:auto; }
+div.company  table.main_gallery table {width:100%;  margin:0 auto !important; text-align:center; box-sizing:border-box; padding:0;}
+
+div.company div.floatR ul li span.tit {display:block; font-size:18px; padding-bottom:0px; }
+div.company div.floatR ul li span.txt {display:none; font-size:15px;}
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}
+

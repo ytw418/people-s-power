@@ -1,0 +1,21 @@
+div.language {position:absolute; top:3px;}
+span.flag-icon img{width:25px; height:auto; vertical-align: middle; padding-bottom:3px; padding-right:3px;}
+.dropdown-menu {min-height:0; max-height:236px !important;}
+:not(.input-group-btn).bootstrap-select.btn-group, [class*=span].bootstrap-select.btn-group, [class*=col-].bootstrap-select.btn-group{
+margin-bottom:0px !important;	}
+.bootstrap-select.btn-group.fit-width .btn .caret {margin-top: -8px !important; }
+.bootstrap-select.btn-group .btn .filter-option {width:auto !important;}
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}

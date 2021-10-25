@@ -1,0 +1,23 @@
+div.youtube { width:100%; margin:0 auto; padding:0px 0px;  box-sizing:border-box;  }
+div.youtube a{ position:relative; display:block; height:550px; background:url("../img/movie.jpg")no-repeat center top; }
+div.youtube p {position:absolute;  width:100%; color:#fff; font-size:30px; text-align:center; padding-top:190px; display:block; z-index: 1; }
+div.youtube p span {opacity:0.75; display:block; padding-top:15px;}
+div.youtube a:hover span.mask { opacity:0.3; display:block; width:100%; height:550px; position:absolute; background-color:#000;  }
+div.youtube img {vertical-align:top;}
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+div.youtube a{ height:350px;  }
+div.youtube p {padding-top:90px; }
+div.youtube a:hover span.mask { height:350px; }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}

@@ -1,0 +1,123 @@
+*,*:before,*:after { margin: 0;  padding: 0;  box-sizing: border-box;  -moz-box-sizing: border-box;  -webkit-box-sizing: border-box;}
+.clearfix {  clear: both;  overflow: hidden;}
+header.container {  width: 100%;  max-width: 1100px;  margin: 0 auto;}
+
+/*---------------------------------------
+  HEAD             
+-----------------------------------------*/
+.slicknav_menu {display:none;}/*모바일 메뉴*/
+#header {width:1000px; margin:0 auto; overflow:hidden; padding:9px 0 0 0; }
+#header div.logo { position:absolute; padding-top:2px; box-sizing:border-box;  width:210px; z-index:10;}
+aside.util {width:100%; font-size:12px; display:block; background-color:#f0f0f0; border-bottom:1px solid #e9e9e9; }
+aside.util div.util_Area { width:1100px;  margin:0 auto;  text-align:right; padding:4px 0px 0 0; height:25px; }
+aside.util div.util_Area a{ color:#888; padding:0px 12px 0 12px; border-left:1px solid #ccc;  }
+aside.util div.util_Area a.first{ border-left:0px; }
+
+/*---------------------------------------
+  MENU             
+-----------------------------------------*/
+img.logo {  float: left;}
+/* Section */
+section.stretch {  height: 1500px;  width: 100%;}
+section.stretch p {   font-size: 30px;  text-align: center;  margin-top: 300px;}
+/* Header */
+header {    width: 100%;  position: fixed; top:0;  z-index: 10;}
+header a {  color: #222;  text-decoration: none;  text-transform: uppercase;}
+header a.select,header a:hover {  color: #3d3d3d;}
+header #topmenu ul > li {  margin:7px 0 0 0}
+/* header large */
+header.large{  height: 90px; border-bottom:0px solid #ccc;  z-index: 99; }
+header.large .logo img {  width: auto;  height: 60px;  position: absolute;  top: 7px;   margin: auto;}
+header.large .util {display:none; margin-top:0;}
+header.large .topmenu ul li a{height:60px; color:#dfdfdf ; font-weight:bold }
+header.large div.logo_c {display:none; }
+header.large .topmenu .home {}
+/* header small */
+header.small{  height: 70px; border-bottom:1px solid #dfdfdf; background-color: rgba(255,255,255,.95); z-index: 99; }
+header.small .logo img {  width: auto;  height: 50px;  position: absolute;  top: 1px;   margin: auto;}
+header.small .util {display:none; margin-top:0;}
+header.small .topmenu ul li a{height:60px; }
+header.small div.logo_w {display:none; }
+header.small .topmenu .home {}
+header.small #topmenu ul li a {padding:5px 15px; font-weight:bold}
+
+/* Transitions */
+header,header div,nav,header a,header img,header li,.util {  
+	transition: .5s all;  -moz-transition: .5s all;  -webkit-transition: .5s all;  -o-transition: .5s all;}
+
+#topmenu .icon{display:none;}
+#topmenu{ clear:both; width:100%; font-size:17px; box-sizing: border-box;  position:relative;}
+#topmenu .nav {width:1000px; box-sizing: border-box;  margin:0 auto;  padding:0 0px 0px 200px;   box-sizing: border-box;}
+#topmenu p {   line-height: 1.5em;  margin-bottom: 10px;  font-size: 16px;  padding: 0;}
+#topmenu p:last-child {  margin-bottom: 40px;}
+#topmenu a { text-decoration: none;}
+#topmenu a:hover {color:#fff;  -webkit-transition: all .1s ease-in-out;  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;  -o-transition: all .1s ease-in-out;  transition: all .1s ease-in-out;}
+header.small #topmenu ul li a:hover {color:#df192a;} 
+#topmenu nav {  width: 100%;  top: 0;  left: 0;   /* position: fixed;*/}
+#topmenu nav .padded {  }
+#topmenu ul {  float: left;  width: 100%;  margin: 0 0 0px 0;  padding: 0;}
+#topmenu ul li { width:20%;  float: left;  text-align:center; display: inline;  margin-right: 0px;  list-style: none;}
+#topmenu ul li:nth-child(even) a {  /*background: #4a6c8c;*/}
+#topmenu ul li a {  display: block;  padding: 15px;   text-decoration: none;}
+#topmenu ul li a:hover {   -webkit-transition: all .2s ease-in-out;  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;  -o-transition: all .2s ease-in-out;  transition: all .2s ease-in-out;}
+
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+.slicknav_menu {display:none; border-bottom:1px solid #dfdfdf;}/*모바일 메뉴*/
+#topmenu {padding:0 0 5px 0;	}
+#top { background-color:#fff; z-index: 999; position:relative; top:0; left:0; width:auto;   }
+#header {width:100%; padding:0 ; overflow:hidden;    }
+#topmenu .nav {width:100%; box-sizing: border-box;  margin:0 auto;  padding:0 0px 0px 0px;   box-sizing: border-box;}
+header .topmenu ul li a{height:auto; text-align: center;}
+#header div.logo {  padding:0px 10px;  z-index:10; }
+
+
+#topmenu {  width: 100%; min-height: 80px;position: fixed; top: 0; scrolltop: false;}
+#topmenu .icon a { color: #fff; position: absolute; top: 10px; right:20px; font-size: 2.5em; text-decoration: none; z-index: 991299;}
+#topmenu .icon {display:block; cursor: pointer;}
+#topmenu .links { color: white; top: 0; left: 0; right: 0; position: absolute; text-decoration: none; list-style: none;
+  height: 0; overflow: hidden; background: #333; width: 100%;  text-align: center; z-index: 11;}
+#topmenu .links ul {display:block; margin:100px 0 90px !important; overflow:hidden;}
+#topmenu .links ul li {  list-style: none; }
+#topmenu .links a { text-decoration: none;  color: #fff !important;  font-size:30px; }
+
+#topmenu .toggle {  height: auto;}
+#topmenu ul li { width:100%;  float: none;  text-align:center; display: inline;  margin-right: 0px;  list-style: none;}
+#topmenu ul li a {  display: block;  padding: 15px 10px !important; height:auto !important;   color: #333;  text-decoration: none;}
+header .topmenu .home {display:block !important;}
+
+/* header large */
+header.large{  height: 80px; border-bottom:0px solid #ccc;  z-index: 99; padding-top:5px; }
+header.large .logo img {  width: auto;  height: 60px;  position: absolute;  top: 5px;   margin: auto;}
+header.large .util {display:none; margin-top:0;}
+header.large .topmenu ul li a{ color:#fff ;}
+header.large div.logo_c {display:none; }
+header.large .topmenu .home {}
+/* header small */
+header.small{ padding-top:5px;  height: 60px; border-bottom:1px solid #dfdfdf; background-color: rgba(255,255,255,.95); z-index: 99; }
+header.small .logo img {  width: auto;  height: 50px;  position: absolute;  top: 0px;   margin: auto;}
+header.small .util {display:none; margin-top:0;}
+header.small div.logo_w {display:none; }
+header.small .topmenu .home {}
+header.small #topmenu .icon a { color: #888; top: 5px; font-size: 2em;}
+
+
+
+header {  height: auto;  }
+header img {vertical-align:top;  width: auto;  height: 55px;  position: relative;  top: 0;   margin: auto;}
+header ul > li {  margin: 0px 0 0 0}
+
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}
+

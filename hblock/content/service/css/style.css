@@ -1,0 +1,32 @@
+#service {width:100%; margin:0 auto; overflow:hidden;}
+#service p.txtP { padding-bottom:20px; }
+#service .sub_txt01 { padding:0 10px;}
+#service div.icoBox {overflow:hidden; margin:20px 0 35px 0;}
+#service section {padding:170px 35px 40px 35px; text-align:center; border:1px solid #dfdfdf; margin:1% 1%; width:31%; box-sizing:border-box; min-height:300px; float:left; }
+#service section.ico1 {background:url("../img/img1.png")no-repeat center 40px;}
+#service section.ico2 {background:url("../img/img2.png")no-repeat center 40px;}
+#service section.ico3 {background:url("../img/img3.png")no-repeat center 40px;}
+#service section.ico4 {background:url("../img/img4.png")no-repeat center 40px;}
+#service section.ico5 {background:url("../img/img5.png")no-repeat center 40px;}
+#service section.ico6 {background:url("../img/img6.png")no-repeat center 40px;}
+#service div.tit {font-size:20px; padding-bottom:20px;}
+#service div.txt {font-size:14px; }
+
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+#service {width:100%; }	
+#service div.icoBox {padding:0 15px;}
+}
+@media (max-width: 768px) {
+#service section {width:100%;  margin:2% 0%;}	
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}
+

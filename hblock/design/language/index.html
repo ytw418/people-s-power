@@ -1,0 +1,18 @@
+<!--/*-----------------------------------------------------------------+
+|  이미지 경로 : {{$template}}/img/hblock/design/language/img/  
+|  css 경로    : {{$template}}/img/hblock/design/language/css/
+|  js 경로     : {{$template}}/img/hblock/design/language/js/
++------------------------------------------------------------------*/-->
+
+<link rel='stylesheet' href='{{$template}}/img/hblock/design/language/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css'>
+<link rel='stylesheet' href='{{$template}}/img/hblock/design/language/css/style.css'>  
+<div class="language">
+<select class="selectpicker" data-width="fit"  onchange="window.location.href=this.value;">
+ <option value="#"  data-content='<span class="flag-icon flag-icon-mx"><img src="{{$template}}/img/hblock/main/language/img/ko_100.png" /></span> 한국어'>한국어</option>
+ <option value="#" data-content='<span class="flag-icon flag-icon-us"><img src="{{$template}}/img/hblock/main/language/img/en_100.png" /></span> English'>English</option>
+</select>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script  src="{{$template}}/img/hblock/design/language/js/index.js"></script>

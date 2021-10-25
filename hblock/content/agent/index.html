@@ -1,0 +1,157 @@
+<!--/*-----------------------------------------------------------------+
+|  이미지 경로 : {{$template}}/img/hblock/content/agent/img/  
+|  css 경로    : {{$template}}/img/hblock/content/agent/css/
+|  js 경로     : {{$template}}/img/hblock/content/agent/js/
++------------------------------------------------------------------*/-->
+
+<script src="{{$template}}/img/hblock/content/agent/js/jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+ $('img[usemap]').rwdImageMaps();
+});
+</script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link rel="stylesheet" href="{{$template}}/img/hblock/content/agent/css/style.css">
+ 
+ 
+<div id="agent">
+{{if $get.sub eq "05"}}
+<span class="map2">
+{{if !$get.sub or $get.com_board_category_code eq "c1"}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca1.jpg" name="m1" usemap="#Map" id="Map" >
+{{elseif $get.com_board_category_code eq "c2"}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca2.jpg" name="m2"  usemap="#Map" id="Map" >
+{{elseif $get.com_board_category_code eq "c3"}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca3.jpg" name="m3" usemap="#Map" id="Map" >
+{{elseif $get.com_board_category_code eq "c4"}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca4.jpg" name="m4" usemap="#Map" id="Map" >
+{{elseif $get.com_board_category_code eq "c5"}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca5.jpg" name="m5" usemap="#Map" id="Map" >
+{{elseif $get.com_board_category_code eq "c6"}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca6.jpg" name="m6" usemap="#Map" id="Map" >
+{{elseif $get.com_board_category_code eq "c7"}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca7.jpg" name="m7" usemap="#Map" id="Map" >
+{{elseif $get.com_board_category_code eq "c8"}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca8.jpg" name="m8" usemap="#Map" id="Map" >
+{{elseif $get.com_board_category_code eq "c9"}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca9.jpg" name="m9" usemap="#Map" id="Map" >
+{{elseif $get.com_board_category_code eq "c10"}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca10.jpg" name="m10"  usemap="#Map" id="Map" >
+{{elseif $get.com_board_category_code eq "c11"}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca11.jpg" name="m11" usemap="#Map" id="Map" >
+{{elseif $get.com_board_category_code eq "c12"}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca12.jpg" name="m12" usemap="#Map" id="Map" >
+{{elseif $get.com_board_category_code eq "c13"}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca13.jpg" name="m13" usemap="#Map" id="Map" >
+{{elseif $get.com_board_category_code eq "c14"}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca14.jpg" name="m14" usemap="#Map" id="Map" >
+{{elseif $get.com_board_category_code eq "c15"}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca15.jpg" name="m15" usemap="#Map" id="Map" >
+{{elseif $get.com_board_category_code eq "c16"}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca16.jpg" name="m16" usemap="#Map" id="Map" >
+{{elseif $get.com_board_category_code eq ""}}
+<img src="{{$template}}/img/hblock/content/agent/img/ca0.jpg" name="m0" usemap="#Map"  id="Map" >
+{{/if}}
+<map name="Map">
+<area shape="poly" coords="130,187,173,161,194,174,196,187,197,198,183,211,158,205,138,202"  href="{{$template}}/customer/customer_5.php?tit=05&sub=05&com_board_category_code=c1" onMouseOver="MM_swapImage('m0','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1); MM_swapImage('m1','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1); MM_swapImage('m2','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1); MM_swapImage('m3','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1); MM_swapImage('m4','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1); MM_swapImage('m5','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1); MM_swapImage('m6','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1); MM_swapImage('m7','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1); MM_swapImage('m8','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1); MM_swapImage('m9','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1); MM_swapImage('m10','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1); MM_swapImage('m11','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1); MM_swapImage('m12','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1); MM_swapImage('m13','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1); MM_swapImage('m14','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1); MM_swapImage('m15','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1);
+MM_swapImage('m16','','{{$template}}/img/hblock/content/agent/img/ca1.jpg',1)"
+onmouseout="MM_swapImgRestore()"  alt="서울">
+<area shape="poly" coords="102,191,120,237,131,234,127,199,115,188" 
+onMouseOver="MM_swapImage('m0','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1); MM_swapImage('m1','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1); MM_swapImage('m2','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1); MM_swapImage('m3','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1); MM_swapImage('m4','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1); MM_swapImage('m5','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1); MM_swapImage('m6','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1); MM_swapImage('m7','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1); MM_swapImage('m8','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1); MM_swapImage('m9','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1); MM_swapImage('m10','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1); MM_swapImage('m11','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1); MM_swapImage('m12','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1); MM_swapImage('m13','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1); MM_swapImage('m14','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1); MM_swapImage('m15','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1);
+MM_swapImage('m16','','{{$template}}/img/hblock/content/agent/img/ca2.jpg',1)" onMouseOut="MM_swapImgRestore()" 
+href="{{$template}}/customer/customer_5.php?tit=05&sub=05&com_board_category_code=c2" alt="인천">
+<area shape="poly" coords="71,184,92,186,112,179,127,182,173,150,200,167,208,189,201,208,186,222,161,218,136,209,141,234,121,247,115,264,116,278,177,290,210,277,242,246,254,225,249,196,230,174,229,152,236,133,229,123,210,115,200,97,172,74,162,80,151,110,123,119,118,149,94,148,77,145,71,160" 
+onMouseOver="MM_swapImage('m0','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1); MM_swapImage('m1','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1); MM_swapImage('m2','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1); MM_swapImage('m3','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1); MM_swapImage('m4','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1); MM_swapImage('m5','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1); MM_swapImage('m6','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1); MM_swapImage('m7','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1); MM_swapImage('m8','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1); MM_swapImage('m9','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1); MM_swapImage('m10','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1); MM_swapImage('m11','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1); MM_swapImage('m12','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1); MM_swapImage('m13','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1); MM_swapImage('m14','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1); MM_swapImage('m15','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1);
+MM_swapImage('m16','','{{$template}}/img/hblock/content/agent/img/ca3.jpg',1)"
+onmouseout="MM_swapImgRestore()" 
+href="{{$template}}/customer/customer_5.php?tit=05&sub=05&com_board_category_code=c3" alt="경기도">
+<area shape="poly" coords="461,254,439,269,359,268,319,251,256,252,266,231,262,197,241,174,243,141,246,121,224,114,206,95,181,67,237,66,314,64,337,49,341,20,347,16,355,30,366,73,387,103,415,159,451,219,461,234" 
+onMouseOver="MM_swapImage('m0','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1); MM_swapImage('m1','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1); MM_swapImage('m2','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1); MM_swapImage('m3','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1); MM_swapImage('m4','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1); MM_swapImage('m5','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1); MM_swapImage('m6','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1); MM_swapImage('m7','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1); MM_swapImage('m8','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1); MM_swapImage('m9','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1); MM_swapImage('m10','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1); MM_swapImage('m11','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1); MM_swapImage('m12','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1); MM_swapImage('m13','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1); MM_swapImage('m14','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1); MM_swapImage('m15','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1);
+MM_swapImage('m16','','{{$template}}/img/hblock/content/agent/img/ca4.jpg',1)"
+onmouseout="MM_swapImgRestore()" 
+href="{{$template}}/customer/customer_5.php?tit=05&sub=05&com_board_category_code=c4" alt="강원도">
+<area shape="poly" coords="194,295,197,318,195,351,206,369,216,393,223,426,251,435,255,362,254,331,281,308,306,306,326,309,338,284,350,275,322,258,268,260,245,257"
+onMouseOver="MM_swapImage('m0','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1); MM_swapImage('m1','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1); MM_swapImage('m2','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1); MM_swapImage('m3','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1); MM_swapImage('m4','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1); MM_swapImage('m5','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1); MM_swapImage('m6','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1); MM_swapImage('m7','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1); MM_swapImage('m8','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1); MM_swapImage('m9','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1); MM_swapImage('m10','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1); MM_swapImage('m11','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1); MM_swapImage('m12','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1); MM_swapImage('m13','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1); MM_swapImage('m14','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1); MM_swapImage('m15','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1);
+MM_swapImage('m16','','{{$template}}/img/hblock/content/agent/img/ca5.jpg',1)"
+onmouseout="MM_swapImgRestore()" 
+href="{{$template}}/customer/customer_5.php?tit=05&sub=05&com_board_category_code=c5" alt="충청북도">
+<area shape="poly" coords="181,298,132,292,110,284,100,291,82,277,74,275,58,288,60,300,33,314,41,332,48,364,56,376,67,378,70,409,78,428,94,436,120,424,168,425,185,429,192,437,218,432,212,424,175,413,160,407,161,370,189,350,188,314"  
+onMouseOver="MM_swapImage('m0','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1); MM_swapImage('m1','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1); MM_swapImage('m2','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1); MM_swapImage('m3','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1); MM_swapImage('m4','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1); MM_swapImage('m5','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1); MM_swapImage('m6','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1); MM_swapImage('m7','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1); MM_swapImage('m8','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1); MM_swapImage('m9','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1); MM_swapImage('m10','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1); MM_swapImage('m11','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1); MM_swapImage('m12','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1); MM_swapImage('m13','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1); MM_swapImage('m14','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1); MM_swapImage('m15','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1);
+MM_swapImage('m16','','{{$template}}/img/hblock/content/agent/img/ca6.jpg',1)"
+onmouseout="MM_swapImgRestore()" 
+href="{{$template}}/customer/customer_5.php?tit=05&&sub=05&com_board_category_code=c6" alt="충청남도">
+<area shape="poly" coords="165,404,168,380,167,368,178,365,188,360,205,379,209,418,185,408" 
+onMouseOver="MM_swapImage('m0','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1); MM_swapImage('m1','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1); MM_swapImage('m2','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1); MM_swapImage('m3','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1); MM_swapImage('m4','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1); MM_swapImage('m5','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1); MM_swapImage('m6','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1); MM_swapImage('m7','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1); MM_swapImage('m8','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1); MM_swapImage('m9','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1); MM_swapImage('m10','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1); MM_swapImage('m11','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1); MM_swapImage('m12','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1); MM_swapImage('m13','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1); MM_swapImage('m14','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1); MM_swapImage('m15','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1);
+MM_swapImage('m16','','{{$template}}/img/hblock/content/agent/img/ca7.jpg',1)"
+onmouseout="MM_swapImgRestore()" 
+href="{{$template}}/customer/customer_5.php?tit=05&&sub=05&com_board_category_code=c7" alt="대전">
+<area shape="poly" coords="255,443,222,436,202,446,188,446,174,433,119,429,100,444,77,442,65,449,88,479,71,482,64,499,51,510,60,519,48,529,78,544,93,530,112,529,147,547,191,546,202,529,198,509,225,459,251,453"  
+onMouseOver="MM_swapImage('m0','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1); MM_swapImage('m1','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1); MM_swapImage('m2','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1); MM_swapImage('m3','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1); MM_swapImage('m4','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1); MM_swapImage('m5','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1); MM_swapImage('m6','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1); MM_swapImage('m7','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1); MM_swapImage('m8','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1); MM_swapImage('m9','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1); MM_swapImage('m10','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1); MM_swapImage('m11','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1); MM_swapImage('m12','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1); MM_swapImage('m13','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1); MM_swapImage('m14','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1); MM_swapImage('m15','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1);
+MM_swapImage('m16','','{{$template}}/img/hblock/content/agent/img/ca8.jpg',1)"
+onmouseout="MM_swapImgRestore()" 
+href="{{$template}}/customer/customer_5.php?tit=05&&sub=05&com_board_category_code=c8" alt="전라북도">
+<area shape="poly" coords="211,632,210,594,196,575,193,555,137,552,110,540,97,533,90,546,77,551,56,544,38,536,29,563,17,576,32,594,27,607,30,631,20,648,41,658,44,667,28,673,28,687,36,719,47,721,64,703,74,694,96,702,106,687,117,668,99,623,71,608,67,584,76,575,92,567,135,572,149,591,127,614,114,621,99,621,118,669" 
+onMouseOver="MM_swapImage('m0','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1); MM_swapImage('m1','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1); MM_swapImage('m2','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1); MM_swapImage('m3','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1); MM_swapImage('m4','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1); MM_swapImage('m5','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1); MM_swapImage('m6','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1); MM_swapImage('m7','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1); MM_swapImage('m8','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1); MM_swapImage('m9','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1); MM_swapImage('m10','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1); MM_swapImage('m11','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1); MM_swapImage('m12','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1); MM_swapImage('m13','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1); MM_swapImage('m14','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1); MM_swapImage('m15','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1);
+MM_swapImage('m16','','{{$template}}/img/hblock/content/agent/img/ca9.jpg',1)"
+onmouseout="MM_swapImgRestore()" 
+href="{{$template}}/customer/customer_5.php?tit=05&&sub=05&com_board_category_code=c9" alt="전라남도">
+<area shape="poly" coords="102,615,77,601,72,587,92,574,134,580,141,587,122,606" 
+onMouseOver="MM_swapImage('m0','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1); MM_swapImage('m1','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1); MM_swapImage('m2','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1); MM_swapImage('m3','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1); MM_swapImage('m4','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1); MM_swapImage('m5','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1); MM_swapImage('m6','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1); MM_swapImage('m7','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1); MM_swapImage('m8','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1); MM_swapImage('m9','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1); MM_swapImage('m10','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1); MM_swapImage('m11','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1); MM_swapImage('m12','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1); MM_swapImage('m13','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1); MM_swapImage('m14','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1); MM_swapImage('m15','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1);
+MM_swapImage('m16','','{{$template}}/img/hblock/content/agent/img/ca10.jpg',1)"
+onmouseout="MM_swapImgRestore()" 
+href="{{$template}}/customer/customer_5.php?tit=05&&sub=05&com_board_category_code=c10" alt="광주" >
+<area shape="poly" coords="259,461,262,364,258,338,282,314,331,316,342,294,358,279,384,276,433,278,451,274,461,265,468,286,466,311,471,329,464,356,449,419,454,446,471,439,483,433,480,448,470,470,469,491,434,491,397,500,359,497,376,475,372,442,358,426,330,439,307,446,305,469,296,487" 
+onMouseOver="MM_swapImage('m0','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1); MM_swapImage('m1','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1); MM_swapImage('m2','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1); MM_swapImage('m3','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1); MM_swapImage('m4','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1); MM_swapImage('m5','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1); MM_swapImage('m6','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1); MM_swapImage('m7','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1); MM_swapImage('m8','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1); MM_swapImage('m9','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1); MM_swapImage('m10','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1); MM_swapImage('m11','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1); MM_swapImage('m12','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1); MM_swapImage('m13','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1); MM_swapImage('m14','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1); MM_swapImage('m15','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1);
+MM_swapImage('m16','','{{$template}}/img/hblock/content/agent/img/ca11.jpg',1)"
+onmouseout="MM_swapImgRestore()" 
+href="{{$template}}/customer/customer_5.php?tit=05&&sub=05&com_board_category_code=c11" alt="경상북도">
+<area shape="poly" coords="218,627,218,596,201,569,203,547,211,532,206,511,222,486,232,468,243,462,256,467,277,484,299,497,325,497,348,503,369,508,383,508,389,534,378,553,346,560,337,569,333,583,324,596,312,615,307,631,280,627,260,623,248,615" 
+onMouseOver="MM_swapImage('m0','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1); MM_swapImage('m1','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1); MM_swapImage('m2','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1); MM_swapImage('m3','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1); MM_swapImage('m4','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1); MM_swapImage('m5','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1); MM_swapImage('m6','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1); MM_swapImage('m7','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1); MM_swapImage('m8','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1); MM_swapImage('m9','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1); MM_swapImage('m10','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1); MM_swapImage('m11','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1); MM_swapImage('m12','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1); MM_swapImage('m13','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1); MM_swapImage('m14','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1); MM_swapImage('m15','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1);
+MM_swapImage('m16','','{{$template}}/img/hblock/content/agent/img/ca12.jpg',1)"
+onmouseout="MM_swapImgRestore()" 
+href="{{$template}}/customer/customer_5.php?tit=05&&sub=05&com_board_category_code=c12" alt="경상남도">
+<area shape="poly" coords="307,488,312,472,313,453,327,447,352,437,358,436,366,449,369,471,364,482,342,493" 
+onMouseOver="MM_swapImage('m0','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1); MM_swapImage('m1','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1); MM_swapImage('m2','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1); MM_swapImage('m3','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1); MM_swapImage('m4','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1); MM_swapImage('m5','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1); MM_swapImage('m6','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1); MM_swapImage('m7','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1); MM_swapImage('m8','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1); MM_swapImage('m9','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1); MM_swapImage('m10','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1); MM_swapImage('m11','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1); MM_swapImage('m12','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1); MM_swapImage('m13','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1); MM_swapImage('m14','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1); MM_swapImage('m15','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1);
+MM_swapImage('m16','','{{$template}}/img/hblock/content/agent/img/ca13.jpg',1)"
+onmouseout="MM_swapImgRestore()" 
+href="{{$template}}/customer/customer_5.php?tit=05&&sub=05&com_board_category_code=c13" alt="대구">
+<area shape="poly" coords="391,506,401,506,417,499,431,499,456,500,470,499,449,533,441,554,407,535,395,531"
+onMouseOver="MM_swapImage('m0','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1); MM_swapImage('m1','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1); MM_swapImage('m2','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1); MM_swapImage('m3','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1); MM_swapImage('m4','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1); MM_swapImage('m5','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1); MM_swapImage('m6','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1); MM_swapImage('m7','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1); MM_swapImage('m8','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1); MM_swapImage('m9','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1); MM_swapImage('m10','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1); MM_swapImage('m11','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1); MM_swapImage('m12','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1); MM_swapImage('m13','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1); MM_swapImage('m14','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1); MM_swapImage('m15','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1);
+MM_swapImage('m16','','{{$template}}/img/hblock/content/agent/img/ca14.jpg',1)"
+onmouseout="MM_swapImgRestore()" 
+href="{{$template}}/customer/customer_5.php?tit=05&&sub=05&com_board_category_code=c14" alt="울산">
+<area shape="poly" coords="343,593,344,572,355,565,375,565,384,556,392,546,401,541,437,558,429,567,420,586,414,596,399,597,386,599,381,608,362,601" 
+onMouseOver="MM_swapImage('m0','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1); MM_swapImage('m1','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1); MM_swapImage('m2','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1); MM_swapImage('m3','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1); MM_swapImage('m4','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1); MM_swapImage('m5','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1); MM_swapImage('m6','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1); MM_swapImage('m7','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1); MM_swapImage('m8','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1); MM_swapImage('m9','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1); MM_swapImage('m10','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1); MM_swapImage('m11','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1); MM_swapImage('m12','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1); MM_swapImage('m13','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1); MM_swapImage('m14','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1); MM_swapImage('m15','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1);
+MM_swapImage('m16','','{{$template}}/img/hblock/content/agent/img/ca15.jpg',1)"
+onmouseout="MM_swapImgRestore()" 
+href="{{$template}}/customer/customer_5.php?tit=05&&sub=05&com_board_category_code=c15" alt="부산">
+<area shape="poly" coords="58,755,76,741,99,727,123,719,139,714,156,718,171,724,175,740,173,751,162,758,138,767,105,769,89,774,71,768"  
+onMouseOver="MM_swapImage('m0','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1); MM_swapImage('m1','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1); MM_swapImage('m2','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1); MM_swapImage('m3','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1); MM_swapImage('m4','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1); MM_swapImage('m5','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1); MM_swapImage('m6','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1); MM_swapImage('m7','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1); MM_swapImage('m8','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1); MM_swapImage('m9','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1); MM_swapImage('m10','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1); MM_swapImage('m11','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1); MM_swapImage('m12','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1); MM_swapImage('m13','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1); MM_swapImage('m14','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1); MM_swapImage('m15','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1);
+MM_swapImage('m16','','{{$template}}/img/hblock/content/agent/img/ca16.jpg',1)"
+onmouseout="MM_swapImgRestore()" 
+href="{{$template}}/customer/customer_5.php?tit=05&&sub=05&com_board_category_code=c16" alt="제주도">
+</map>
+</span>
+{{elseif $get.sub eq ""}}
+{{/if}}
+</div>

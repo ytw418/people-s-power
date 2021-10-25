@@ -1,0 +1,23 @@
+
+div.map .root_daum_roughmap{ width:100% !important;  }/*¥Ÿ¿Ω∏ */
+div.map2 {width:100%; box-sizing:border-box; border:1px solid #dfdfdf; padding:20px 20px 22px 140px;  
+background-color:#fff; background-image:url("../img/bg_address.jpg"); background-repeat:no-repeat; background-position:30px center; margin-top:30px;}
+div.map2 ul {padding:0; margin:0; list-style-type:none; }
+div.map2 ul li span.tit {width:80px; display:inline-block; color:#0071c5; line-height:25px; }
+div.map2 ul li span.add {}
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+div.map2 {width:100%; box-sizing:border-box; border:1px solid #dfdfdf; padding:20px 20px ;  background-color:#fff; background:none; margin-top:30px;}
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}
+

@@ -1,0 +1,18 @@
+<!-- 게시판 시작 -->
+<link rel="StyleSheet" href="/{{$template}}/inc/board/board_{{$com_board.code}}.css" type="text/css">
+<script language="javascript" src="/cjs/board.js?com_board_id={{$com_board.code}}&template={{$template}}"></script>
+
+<table border="0" cellspacing="0" cellpadding="0" width="{{$com_board.output_table_size}}" bgcolor="{{$com_board.output_table_bgcolor}}" background="{{$com_board.output_table_background}}" class='board_output'>
+ <tr>
+  <td>
+   <table border='0' cellspacing='0' cellpadding='0' width='100%' class='board_output'>
+    {{$com_board_output_contents}}
+   </table>
+  </td>
+ </tr>
+ {{$com_board_output_more}}<!--more-->
+</table>
+<!-- 게시판 끝 -->
+
+
+s

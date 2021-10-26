@@ -1,27 +1,36 @@
 footer {padding-top: 30px;  padding-bottom: 50px; }
 footer div.law {width:100%; background-color:#d7212d; overflow:hidden;}
 footer div.law ul {text-align: center; padding:0; }
-footer div.law ul li {list-style-type:none; display: inline-block; padding:20px 0px; font-size:14px; color:#fff; font-weight: 400; letter-spacing:0.1px;}
-footer div.law ul li:before {content:"|"; padding:0 25px; color:#fff; }
+footer div.law ul li {list-style-type:none; display: inline-block; padding:20px 0px; font-size:16px; color:#fff; font-weight: 400; letter-spacing:0.1px;}
+footer div.law ul li:before {content:"|"; padding:0 30px; color:#fff; }
 footer div.law ul li:first-child:before {content:""; border-left:0; padding:0; }
 
-footer div.container {width:1100px; margin:30px auto;  }
-footer p {  color: #888;  font-size: 15px;  font-weight: normal;  line-height: 29px;  }
+footer div.container {width:1500px; margin:30px auto; padding:0 0 50px 0; }
+footer p {  color: #000;  font-size: 16px;  font-weight: 400;  line-height: 29px; display: inline; }
+footer .bottom_text{position: relative;top: -10px;padding-left: 350px;font-size: 13px;color: #8d8d8d;}
+footer .light_m1{margin-right: 30px;}
+footer .light_m2{margin-right: 30px;}
 footer h2 { background:url("../../img/main/bg_ico1.png") no-repeat left top; padding-top:15px;  font-size: 30px; font-weight: 700; line-height: 36px;  margin-top: 0; margin-bottom:20px; letter-spacing:-1px;}
 footer h4 {  padding-top: 12px;}
 footer a {  color: #757575;}
+
 footer .copyright_text { width:100%; display:block; clear:both;  padding-top: 42px;}
 footer .copyright_text a.sign {text-decoration:underline; color:#ccc;}
 div.info_1 {width:38%; float:left; }
-div.info_2 {width:38%; float:left;}
-div.info_3 {width:24%; float:left;}
+div.info_2 {width:62%; float:left;}
+div.info_1 img{width: 60%;left: 130px;
+  position: relative;}
+
+div.info_2 .info_sub1{ padding-bottom: 10px;}
+
 
 /*---------------------------------------
   SOCIAL ICON             
 -----------------------------------------*/
-.social-icon {  position: relative;  padding: 0px 0 25px 0;  margin: 0; }
+.social-icon {  position: relative;  padding: 0px 0 25px 0;  margin: 0; display: inline;}
 .social-icon li {  display: inline-block;  list-style: none;}
-.social-icon li a {  -webkit-transition: all ease-in-out 0.3s;  transition: all ease-in-out 0.3s;  text-align: center;  position: relative;  margin: 4px 6px 0 0px;}
+.social-icon li a {  -webkit-transition: all ease-in-out 0.3s;  transition: all ease-in-out 0.3s;  text-align: center;  position: relative;  margin: 4px 1px 0 0px;}
+.social-icon li a img{width: 30px;}
 /*.social-icon li a:hover {  -webkit-transform: scale(1.1);  transform: scale(1.1);}*/
 p.member_login {display:none;}
 
@@ -30,18 +39,32 @@ p.member_login {display:none;}
   MOBILE RESPONSIVE              
 -----------------------------------------*/
 @media (max-width: 1023px) {
-  footer { text-align: center;  }
-footer div.law ul {width:100%; display:none;  }
+footer { text-align: center;  }
+footer div.law ul {width:100%;  }
 footer div.container {width:100%;   }  
-  footer .social-icon {   padding-top:20px; }
-  div.info_1,div.info_2,div.info_3 {width:100%; float:none; padding-bottom:20px; }
-  .footer-info {    padding: 22px 0 22px 0;  }
+footer .social-icon {   padding-top:20px; }
+div.info_1,div.info_2,div.info_3 {width:100%; float:none; padding-bottom:20px; }
+.footer-info {    padding: 22px 0 22px 0;  }
 footer h2 { background-position: center top; color:#fff }
-footer p {color:#fff;}
+
 }
 @media (max-width: 770px) {
-footer {  padding-top: 0px;  padding-bottom: 50px; background: #d7212d;}
-}
+footer {}
+footer div.law ul{width: 100%;
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding-left: 10px;
+  padding-right: 10px;}
+footer div.law ul li{    list-style-type: none; display: inline-block;padding: 15px 0px; font-size: 11px;color: #fff;font-weight: 400;letter-spacing: 0px;}
+footer div.law ul li:before{content: "|";padding: 0 2px;color: #fff;}}
+div.info_1 img {width: 50%;left: 0;margin: 20px;position: relative;}
+div.info_2 .info_sub1{ padding: 0 20px 50px 20px;float: left;}
+div.info_2 .info_sub1 p{}
+div.info_2 .info_sub2{ padding: 20px 20px 20px 20px;float: left;}
+footer .light_m1 {margin-right: 0px;float: left;}
+footer .light_m2 {margin-right: 0px;float: right;}
+footer .light_m3 {margin-right: 30px;float: left;}
+
 @media (max-width: 580px) {
   .about-info h3 {    font-size: 12px;    letter-spacing: 6px;  }
   .project-info {    padding: 5em 0;  }

@@ -21,7 +21,6 @@ width: 16.666%;   height: 305px;  background-repeat: no-repeat;  background-posi
 .accordion ul li a {background-image:url("../img/arrow.png"); background-repeat:no-repeat; background-position: center 90%;background-color: rgba(0, 0, 0, 0);}
 .accordion ul:hover li:hover a {background-color: rgba(215,33,45,90%);}
 .accordion ul:hover li:hover a * {  opacity: 1;  -webkit-transform: translateX(0);  transform: translateX(0);}
-.accordion ul li div a img{display: none;}
 
 /*---------------------------------------
   MOBILE RESPONSIVE              
@@ -29,25 +28,14 @@ width: 16.666%;   height: 305px;  background-repeat: no-repeat;  background-posi
 @media (max-width: 1023px) {
 }
 @media (max-width: 768px) {
-  .accordion ul li, .accordion ul li div a{height: auto;padding: 0;display: flex;background-size:100% 100%;}
-  .accordion ul li div a img{display: block;}
-  .accordion ul:hover li:hover a {background-color: rgba(215,33,45,0);}
-.accordion {    height: auto !important; margin: 0px; }
+.accordion {    height: auto; margin: 0px; }
 .accordion ul li, .accordion ul li:hover, .accordion ul:hover li, .accordion ul:hover li:hover {
-position: relative;  display: inline; table-layout: fixed;  width: 100%;  -webkit-transition: none;  transition: none;  }
-.accordion ul li div a h2 {padding-top:45px; display: none;   }
-.accordion ul li div a p {  opacity: 1; display: none; }
+position: relative;  display: table;  table-layout: fixed;  width: 100%;  -webkit-transition: none;  transition: none;  }
+.accordion ul li , .accordion ul li div a {height:200px; background-size:cover;}
+.accordion ul li div a h2 {padding-top:45px;   }
+.accordion ul li div a p {  opacity: 1;  }
 .accordion ul li {border-left:0px; border-right:0px } 
 .accordion ul li a {background:none;}
-.accordion ul li:nth-child(1) {
-  background-image: url(../img/img1.jpg);
-  
-
-}
-.accordion ul li:nth-child(2) {
-  background-image: url(../img/img4.jpg);
-  
-}
 }
 @media (max-width: 640px) {
 }

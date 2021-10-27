@@ -11,7 +11,7 @@ width: 16.666%;   height: 305px;  background-repeat: no-repeat;  background-posi
 .accordion ul li div a h2 {text-shadow:0px 0px 5px rgba(0,0,0,0.2); font-family:"Noto Sans KR" ;  font-weight: 700; text-overflow: clip;   font-size: 23px;
   text-transform: uppercase;  margin-bottom: 0; padding:15px 0 0 10px; text-align: left  }
 .accordion ul li div a p {opacity: 0;font-size: 15px;max-width: 250px;font-family: 'Noto Sans KR';padding: 5px 0 0 10px;text-align: center;margin: 25%;border: solid 1px #fff;padding: 10px 0 10px 0; }
-.accordion ul li:nth-child(1) {background-image: url("../img/img4.jpg");  }
+.accordion ul li:nth-child(1) {background-image: url("../img/img4.jpg");}
 .accordion ul li:nth-child(2) {background-image: url("../img/img1.jpg");}
 .accordion ul li:nth-child(3) {background-image: url("../img/img5.jpg");}
 .accordion ul li:nth-child(4) {background-image: url("../img/img3.jpg");}
@@ -20,6 +20,7 @@ width: 16.666%;   height: 305px;  background-repeat: no-repeat;  background-posi
 .accordion ul:hover li:hover {width: 20%;}
 .accordion ul li a {background-image:url("../img/arrow.png"); background-repeat:no-repeat; background-position: center 90%;background-color: rgba(0, 0, 0, 0);}
 .accordion ul:hover li:hover a {background-color: rgba(215,33,45,90%);}
+.accordion ul:hover li:hover .blue_block{background-color: rgba(0,181,227,90%);}
 .accordion ul:hover li:hover a * {  opacity: 1;  -webkit-transform: translateX(0);  transform: translateX(0);}
 .accordion ul li div a img{display: none;}
 

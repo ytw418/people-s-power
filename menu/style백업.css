@@ -1,0 +1,123 @@
+#toparea {position:absolute; top:20px; height:80px; width:100%; padding: 0; box-sizing:border-box; 
+ margin-left:auto; margin-right:auto;  }
+#top {  border-bottom:0px solid #343848;    position: fixed; z-index: 999; width:100%;  }
+#topBox { margin:0 auto; max-width:100% !important;  position:relative;}
+aside.util { position:relative; width:100%; margin:0 auto; font-size:13px;; height:30px;  padding:4px 30px 0 30px;
+background-color:#f0f0f0; overflow:hidden; position: fixed; z-index: 999;  }
+aside.util .utilBox {float:right;}
+aside.util .utilBox2 {float:left;}
+aside.util a{  padding:0px 0px; border-left:0px solid #888;  }
+aside.util a:after {content:"|";  padding:0 10px 0 12px; color:#ccc;  }
+aside.util .utilBox > a:last-child:after {content:""}
+aside.util .utilBox2 > a:last-child:after {content:""}
+aside.util a:hover {color:#333;}
+aside.util a.first{ border-left:0px; }
+
+#header {width:96%; margin:0 auto; padding-top:18px; position: relative;}
+#header div.left {display:none; position:absolute; left:0px; top:35px;}
+#header div.logo { position:fixed;  top:30px; padding:3px 0px;   box-sizing:border-box; z-index: 90;  }
+#header div.right {display:none; position:absolute; right:10px; top:35px;}
+.button_container {display:none;}
+
+/* Header */
+header {  background-color: #fff;  }
+header a {  color: #222;  text-decoration: none;  text-transform: uppercase;}
+header a.active,header a:hover {  color: #3d3d3d;}
+header li { }
+
+/*.gnb{ position:absolute; top:100px ;  border-top:1px solid #d0d0d0; left:0; width:100%;  z-index:13; margin:0px auto 0 auto; 
+background-image:url("../img/bg_menu.png"); background-repeat:repeat-x; background-position: center 59px; }*/
+
+.large .gnb{  border-bottom:0px solid #dfdfdf;}
+.small .gnb{  border-bottom:1px solid #dfdfdf;}
+.gnb{ position:fixed; top:30px ;  left:0; width:100%;  z-index:13; margin:0px auto 0 auto; 
+background-color:rgba(230,30,43,0.8);  }
+.gnb:before{content:""; width:100%; height:80px; position:absolute; top:0; background-color:#fff; z-index: -1; }
+
+/*.gnb a {color:#fff;}
+.gnb .depth1 a:hover {color:#333 !important; }*/
+.gnb .mypage {display:none;}
+.gnb > ul{overflow:hidden; list-style-type:none; width:60%; padding-left:16%; padding-right:0px;  box-sizing:border-box; margin:0 auto; }
+.gnb .menu{float:left; width:16.66666%; text-align:center;  border-left:1px solid rgba(255,255,255,0); border-right:1px solid rgba(255,255,255,0); }
+.gnb .menu:hover { border-left:1px solid #dfdfdf; border-right:1px solid #dfdfdf; }
+.gnb .menu:first-child{margin:0}
+.gnb .depth1.side {display:none;}
+.gnb .depth1{padding:0; font-size:20px;  letter-spacing:-0.3px; text-align:center; margin:0 auto; padding:0px 10px 2px 10px; 
+display:block;  line-height:80px; box-sizing:border-box; height:80px; font-weight:500;}
+.gnb .depth2 a {color:#fff;}
+.gnb .depth2{height:0 ;overflow:hidden;  font-size:15px; border-left:0px solid #353535;  }
+.gnb .menu:first-child .depth2{border-left:0px solid #dfdfdf; }
+.gnb .depth2 ul{ list-style-type:none; padding:15px 0 0 0; margin:0;  color:#888;} /*depth2 height -> menu.js */
+.gnb .depth2 ul.depth2_ul1 > li{margin-top:15px; padding:0 10px; }
+.gnb .depth2 ul.depth2_ul1 > li:first-child{margin-top:10px;}
+.gnb .depth2 ul li a { padding:7px 0; border-radius:5px 5px; display:block; }
+.gnb .depth2 ul li a:hover { color:#e61e2b;  -webkit-transition: 0.5s;  transition: 0.5s;  }
+
+.gnb .depth2 ul.depth2_ul2 {background-color:#f0f0f0; padding:10px 10px; border-radius: 5px 5px; margin-top:10px;}
+.gnb .depth2 ul.depth2_ul2 > li {line-height: 25px;  font-size:12px;}
+
+.gnb:hover {border-bottom:0;}
+.gnb:hover a {color:#fff;}
+.gnb:hover .depth1 a{  color:#333 !important;}
+.gnb .menu:hover {background-color:#fff;  color:#333 !important; }
+.gnb .menu:hover  a{  color:#333}
+.gnb .menu:hover .depth1 a{  border-bottom:0px solid #333; color:#333 !important;  padding-bottom:7px; }
+.gnb .menu:hover .depth1 a,.gnb .menu:hover .depth2 ul{color:#333}
+.gnb .menu:hover .depth2 ul li a {border-bottom:0;  font-weight:500;}
+.gnb:hover .depth2 {}
+.logo a:hover .gnb:hover {background:#fff; color:#333; }
+
+/* header large 
+header.large .logo a{ display: block; background:url("../img/logo.png")no-repeat center top;  height: 60px;  }*/
+/* header small
+header.small .logo a{ display: block; background:url("../img/logo.png")no-repeat center top;  height: 60px; }*/
+/*header.small .gnb{ background-color:#fff; border-bottom:0px solid rgba(0,0,0,0.1);}
+header.small .gnb a{ color:#333; }
+header.small .open span{background-color:#fff !important; }
+header.small .slide-menu .caret {background-color:#111 !important;}
+header.small .util { margin:-30px auto 0 auto; width:1200px; }
+header.small .gnb{top:0px ; border-bottom:1px solid #dfdfdf; }
+header.small #toparea {top:0px; width:100%; }
+header.small .gnb .depth1{font-size:16px; padding:0 10px; line-height:60px;}
+header.small #header div.logo {   top:5px ; }
+header.small .cd-nav-trigger {top:3px !important; transition: .5s all;}*/
+
+/* Transitions */
+header,nav,header a,header img,header li,.util, .gnb, util {  
+	transition: .5s all;  -moz-transition: .5s all;  -webkit-transition: .5s all;  -o-transition: .5s all;}
+
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+#toparea {width:100%; top:0px; height:auto;padding:0 0px;   }
+header.small #toparea {top:0px; width:100%; background-color:#fff; border-bottom:1px solid #dfdfdf; }
+#header {width:100%; padding-top:0px; height:65px;}
+#topBox { margin:0 auto; max-width:100% !important;  }
+#top {overflow:hidden; background-color:#fff;}
+header {  width:calc(100% - 0px); }
+#header div.logo { position:relative; padding:3px 0 0 0;  top:0; }
+#header div.logo img {max-height:60px; margin-left: 10px; }
+#header div.right {position:absolute; right:0px; top:30px;  }
+
+aside.util {display:none; font-size:12px;   }
+aside.util a:after {content:"|";  padding:0 5px 0 8px; color:#ccc;  }
+
+.large #top{  border-bottom:0px solid #dfdfdf;}
+.small #top{  border-bottom:1px solid #dfdfdf;}
+.gnb{ display:none; }
+.overlay div.contact {display:none; }
+div.button_container div.txt{display:none;}
+.button_container { display:block;  position: absolute;  }
+.button_container {    top: 20px;  right: 20px; }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}
+

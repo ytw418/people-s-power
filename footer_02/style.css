@@ -22,7 +22,8 @@ div.info_1 img{width: 60%;left: 130px;
   position: relative;}
 
 div.info_2 .info_sub1{ padding-bottom: 10px;}
-
+.pc{display: block;}
+.mo{display: none;}
 
 /*---------------------------------------
   SOCIAL ICON             
@@ -48,6 +49,8 @@ footer h2 { background-position: center top; color:#fff }
 
 }
 @media (max-width: 770px) {
+.pc{display: none;}
+.mo{display: block;}
 footer p{font-size: 14px;}
 footer {padding: 0;}
 footer div.law ul{width: 100%;

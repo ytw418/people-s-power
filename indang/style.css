@@ -1,0 +1,26 @@
+.content_main h2{
+margin-bottom: 30px;
+}
+.content_main h2::before {
+    content: '';
+    border-color: #004d7d;
+    border-style: solid;
+    border-width: 0 10px 0px 0;
+    height: 16px;
+    margin-right: 18px;
+}
+.content_main .sec1{margin-bottom: 100px;}
+
+.content_main .sec2{display: flex;}
+.content_main .sec2 .left{flex: 1;}
+.content_main .sec2 .right{flex: 1;}
+.content_main .sec2 .right
+.content_main .sec3 .card{
+    display: inline-flex;
+    width: 340px;
+    height: 140px;
+    border: solid 1px;
+    flex-direction: column;
+    margin: 5px;
+    padding: 20px;
+}

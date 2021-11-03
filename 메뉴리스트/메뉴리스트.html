@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+</head>
+
+<style>
+    div:first-child {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2em;
+    }
+    div:nth-child(2){
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    div a {
+      text-decoration: none;
+      color:black;
+      margin: 1em;
+      font-size: 2em;
+    }
+    
+    #horizontal-underline{
+      position: absolute;
+      left:0;
+      height: 4px;
+      width: 0;
+      border-radius: 3px;
+      transition: 0.5s;
+      background-color: pink;
+      top:0;
+    
+    }
+    
+    #vertical-underline{
+      position: absolute;
+      left:0;
+      height: 4px;
+      width: 0;
+      border-radius: 3px;
+      transition: 0.5s;
+      background-color: skyblue;
+      top:0;
+    
+    }</style>
+<body>
+  <div class="asd">
+		<div class="asdf">
+		<div id="horizontal-underline"></div>
+		<a href="#">About</a>
+		<a href="#">Menu</a>
+		<a href="http://cbkrpower.cafe24.com/bizdemo116526/01/01.php?tit=01&sub=01">Store</a>
+		<a href="http://cbkrpower.cafe24.com/bizdemo116526/01/01.php?tit=01&sub=01">Service</a>
+		<a href="http://cbkrpower.cafe24.com/bizdemo116526/01/01.php?tit=01&sub=01">Responsibility</a>
+	</div>
+		
+</div>
+
+<div class="asd">
+		<div id="vertical-underline"></div>
+		<a onmouseover="horizontalIndicator()" href="#">About</a>
+		<a href="#">Menu</a>
+		<a href="#">Store</a>
+		<a href="#">Service</a>
+		<a href="#">Responsibility</a>
+</div>
+
+<div class="asd">
+	<div id="vertical-underline"></div>
+	<a href="#">About</a>
+	<a href="#">Menu</a>
+	<a href="#">Store</a>
+	<a href="#">Service</a>
+	<a href="#">Responsibility</a>
+</div>
+
+<div class="asd">
+	<div id="vertical-underline"></div>
+	<a href="#">About</a>
+	<a href="#">Menu</a>
+	<a href="#">Store</a>
+	<a href="#">Service</a>
+	<a href="#">Responsibility</a>
+</div>
+
+
+	<script>
+        let verticalBar = document.getElementById("vertical-underline");
+let horizontalBar = document.getElementById("horizontal-underline");
+let horizontalMenus = document.querySelectorAll(".asd:first-child a");
+let verticalMenus = document.querySelectorAll("a"); 
+
+function verticalIndicator(e.currentTarget) {
+  verticalBar.style.left = e.offsetLeft + "px";
+  verticalBar.style.width = e.offsetWidth + "px";
+  verticalBar.style.top = e.offsetTop + e.offsetHeight + "px";
+}
+function horizontalIndicator(e) {
+    
+  horizontalBar.style.left = e.offsetLeft + "px";
+  horizontalBar.style.width = e.offsetWidth + "px";
+  horizontalBar.style.top = e.offsetTop + e.offsetHeight + "px";
+
+}
+
+horizontalMenus.forEach((menu) =>
+  menu.addEventListener("onmouseover", (e) =>
+    horizontalIndicator(e.currentTarget)
+  )
+);
+
+verticalMenus.forEach((menu) =>
+  menu.addEventListener("onMouseOver", (e) => verticalIndicator(e.currentTarget))
+);
+	</script>
+</body>
+
+</html>

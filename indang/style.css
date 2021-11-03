@@ -27,9 +27,9 @@
     justify-content: center;
     align-content: stretch;
     flex-direction: column;
-    border: solid 1px #444444;
+    border: solid 1px #af000b;
     color: #fff;
-    background: #d7212d;}
+    background: #e61e2b;}
 .content_main .sec2 .right p{
     display: inline-flex;
     width: 30%;
@@ -39,7 +39,7 @@
     justify-content: center;
     align-content: stretch;
     flex-direction: column;
-    border: solid 1px #444444;
+    border: solid 1px ;
 }
 
 .content_main .sec2 .right a{
@@ -51,9 +51,9 @@
     justify-content: center;
     align-content: stretch;
     flex-direction: column;
-    border: solid 1px #444444;
+    border: solid 1px #af000b;
     color: #fff;
-    background: #d7212d;}
+    background: #e61e2b;}
 .content_main .sec3 .card{
     display: inline-flex;
     width: 350px;
@@ -63,7 +63,7 @@
     margin: 5px 10px 5px 0;
     padding: 25px;
     color: #000;
-    border: solid 1px #444444;
+    border: solid 1px ;
 }
 .content_main .sec4 .right p{
     display: inline-flex;
@@ -74,7 +74,7 @@
     justify-content: center;
     align-content: stretch;
     flex-direction: column;
-    border: solid 1px #444444;}
+    border: solid 1px;}
 
 .content_main .sec4 .right a{
     display: inline-flex;
@@ -85,9 +85,9 @@
     justify-content: center;
     align-content: stretch;
     flex-direction: column;
-    border: solid 1px #444444;
+    border: solid 1px #af000b;
     color: #fff;
-    background: #d7212d;}
+    background: #e61e2b;}
 
 
 
@@ -158,9 +158,9 @@ a.fusion-button:hover::before{
     justify-content: center;
     align-content: stretch;
     flex-direction: column;
-    border: solid 1px#444444;
+    border: solid 1px#af000b;
     color: #fff;
-    background: #d7212d;}
+    background: #e61e2b;}
 .content_main .sec2 .right p{
     display: flex;
     width: 50%;
@@ -182,9 +182,9 @@ a.fusion-button:hover::before{
     justify-content: center;
     align-content: stretch;
     flex-direction: column;
-    border: solid 1px#444444;
+    border: solid 1px#af000b;
     color: #fff;
-    background: #d7212d;
+    background: #e61e2b;
 }
 .content_main .sec3 .card{
     display: flex;
@@ -208,7 +208,7 @@ font-size: 14px;
     justify-content: center;
     align-content: stretch;
     flex-direction: column;
-    border: solid 1px #444444;
+    border: solid 1px ;
 }
 
 .content_main .sec4 .right a{
@@ -220,13 +220,119 @@ font-size: 14px;
     justify-content: center;
     align-content: stretch;
     flex-direction: column;
-    border: solid 1px #444444;
+    border: solid 1px #af000b;
     color: #fff;
-    background: #d7212d;
+    background: #e61e2b;
 }
 
 }
+
 
 @media screen and (max-width:760px) {
     .no760{display: none;}
+}
+
+
+/*======================== 아이폰 5/se ===================================*/
+
+@media screen and (max-width:400px){
+    .content_main a{font-size: 11px;}
+    .content_main h2{margin-bottom: 30px;font-size: 23px;}
+.content_main h3{font-size: 19px;margin-bottom: 10px;}
+.content_main p{font-size: 11px;}
+.content_main strong{font-size: 12px;}
+.content_main .card p:nth-child(2){margin-bottom: 7px;} 
+.content_main h2::before {
+    content: '';
+    border-color: #004d7d;
+    border-style: solid;
+    border-width: 0 10px 0px 0;
+    height: 16px;
+    margin-right: 18px;
+}
+.content_main .sec1 p{word-break: break-all;word-spacing: 1px;}
+.content_main .sec1{margin-bottom: 100px;}
+
+.content_main .sec2{display: flex;margin-bottom: 100px;flex-direction: column;}
+.content_main .sec3{margin-bottom: 100px;}
+.content_main .sec4{display: flex; flex-direction: column;
+}
+.content_main  .left{flex: none;    margin-bottom: 70px;}
+.content_main  .right{flex: none;}
+.content_main .sec2 .left a{
+    display: flex;
+    width: 45.9%;
+    height: 50px;
+    margin: 30px auto;
+    text-align: center;
+    justify-content: center;
+    align-content: stretch;
+    flex-direction: column;
+    border: solid 1px#af000b;
+    color: #fff;
+    background: #e61e2b;}
+.content_main .sec2 .right p{
+    display: flex;
+    width: 50%;
+    height: 70px;
+    margin: 15px auto;
+    text-align: center;
+    justify-content: center;
+    align-content: stretch;
+    flex-direction: column;
+    border: solid 1px;
+}
+
+.content_main .sec2 .right a{
+    display: inline-flex;
+    width: 45.9%;
+    height: 50px;
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+    align-content: stretch;
+    flex-direction: column;
+    border: solid 1px#af000b;
+    color: #fff;
+    background: #e61e2b;
+}
+.content_main .sec3 .card{
+    display: flex;
+    width: 91%;
+    height: 145px;
+    border: solid 1px;
+    flex-direction: column;
+    margin: 8px auto;
+    padding: 7%;
+    padding-left: 10%;
+}
+.content_main .sec3 .card p{
+font-size: 11px;
+}
+.content_main .sec4 .right p{
+    display: flex;
+    width: 50%;
+    height: 70px;
+    margin: 15px auto;
+    text-align: center;
+    justify-content: center;
+    align-content: stretch;
+    flex-direction: column;
+    border: solid 1px ;
+}
+
+.content_main .sec4 .right a{
+    display: inline-flex;
+    width: 45.9%;
+    height: 50px;
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+    align-content: stretch;
+    flex-direction: column;
+    border: solid 1px #af000b;
+    color: #fff;
+    background: #e61e2b;
+}
+
 }

@@ -1,0 +1,62 @@
+<!--/*-----------------------------------------------------------------+
+| 이미지 경로 : {{$template}}/img/hblock/content/Congressman/img/ 
+| css 경로 : {{$template}}/img/hblock/content/Congressman/style.css
+| js 경로 : {{$template}}/img/hblock/content/
+국회의원
++------------------------------------------------------------------*/-->
+
+
+
+<div class="content_main">
+    <div class="sec1">
+        <div class="left">
+            <div class="imgblock"><img src="{{$template}}/img/hblock/content/Congressman/img/01.jpg" alt=""></div>
+            <h2>국회의원</h2>
+            <p>충주&nbsp;&nbsp;<font>이종배</font></p>
+        </div>
+        <div class="right">
+            <div class="imgblock"><img src="{{$template}}/img/hblock/content/Congressman/img/02.jpg" alt=""></div>
+            <h2>국회의원</h2>
+            <p>제천/단양&nbsp;&nbsp;<font>엄태영</font></p>
+        </div>
+    </div>
+
+
+
+
+    <div class="sec2">
+
+
+
+    </div>
+</div>
+
+
+
+
+<style>
+    .content_main .sec1{display: flex;}
+    .content_main .sec1 .left{width: 49%;border: 1px solid #dfdfdf;text-align: center;margin-right: 20px;}
+    .content_main .sec1 .right{width: 49%;border: 1px solid #dfdfdf;text-align: center;}
+    .content_main .imgblock{}
+    .content_main .imgblock img{width: 100%;}
+    .content_main h2{padding: 20px 0 0 0;font-size: 20px;}
+    .content_main h2::after{content: " ";width: 250px; height: 1px; display: block; background-color: #dfdfdf;margin: 9px auto;}
+    .content_main p{font-size: 24px;font-weight: 600;    padding: 5px 0 25px!important;}
+    .content_main p font{font-size: 33px;}
+
+    @media all and (max-width:900px) {
+        .content_main .sec1{display: flex;}
+    .content_main .sec1 .left{width: 49%;border: 1px solid #dfdfdf;text-align: center;margin-right: 8px;}
+    .content_main .sec1 .right{width: 49%;border: 1px solid #dfdfdf;text-align: center;}
+    .content_main .imgblock{}
+    .content_main .imgblock img{width: 100%;}
+    .content_main h2{padding: 10px 0 0 0;font-size: 12px;}
+    .content_main h2::after{content: " ";width: 80px; height: 1px; display: block; background-color: #dfdfdf;margin: 5px auto;}
+    .content_main p{font-size: 14px;font-weight: 600;    padding: 0px 0 15px!important;}
+    .content_main p font{font-size: 20px;}
+
+    }
+
+    
+</style>

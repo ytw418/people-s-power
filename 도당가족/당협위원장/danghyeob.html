@@ -26,6 +26,8 @@
             <h2>당협위원장</h2>
             <p>청주 흥덕&nbsp;&nbsp;<font>정우택</font></p>
         </div>
+
+
         <div class="left block">
             <div class="imgblock"><img src="{{$template}}/img/hblock/content/danghyeob/img/06.jpg" alt=""></div>
             <h2>당협위원장</h2>
@@ -41,20 +43,16 @@
             <h2>당협위원장</h2>
             <p>증평/진천/음성&nbsp;&nbsp;<font>경대수</font></p>
         </div>
-    </div>
+</div>
 
 
 
 
 
 
-    <div class="sec2">
 
 
 
-
-
-    </div>
 </div>
 
 
@@ -63,9 +61,9 @@
 
 
 <style>
-    .content_main .sec1{display: flex;flex-direction: row;flex-wrap: wrap;}
-    .content_main .sec1 .left{flex: 1;border: 1px solid #dfdfdf;text-align: center;margin: 5px;}
-    .content_main .imgblock{}
+    .content_main .sec1{display: inline-flex;flex-direction: row;flex-wrap: wrap;}
+    .content_main .sec1 .left{border: 1px solid #dfdfdf;text-align: center;margin: 5px;}
+    .content_main .block{width: 30%;}
     .content_main .imgblock img{width: 100%;}
     .content_main h2{padding: 20px 0 0 0;font-size: 17px;width: 300px;margin: 0 auto;}
     .content_main h2::after{content: " ";width: 250px; height: 1px; display: block; background-color: #dfdfdf;margin: 9px auto;}
@@ -75,9 +73,9 @@
 
 
     @media all and (max-width:900px) {
-        .content_main .sec1{display: flex;flex-direction: row;flex-wrap: wrap;}
+    .content_main .sec1{display: flex;flex-direction: row;flex-wrap: wrap;}
     .content_main .sec1 .left{border: 1px solid #dfdfdf;text-align: center;margin: 3px;}
-    .content_main .imgblock{}
+    .content_main .block{width: 47.5%;}
     .content_main .imgblock img{width: 100%;}
     .content_main h2{padding: 10px 0 0 0;font-size: 12px;width: 120px;margin: 0 auto;}
     .content_main h2::after{content: " ";width: 80px; height: 1px; display: block; background-color: #dfdfdf;margin: 5px auto;}
